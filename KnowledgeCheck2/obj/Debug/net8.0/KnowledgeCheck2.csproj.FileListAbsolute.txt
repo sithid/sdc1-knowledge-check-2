@@ -1,0 +1,15 @@
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\bin\Debug\net8.0\KnowledgeCheck2.exe
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\bin\Debug\net8.0\KnowledgeCheck2.deps.json
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\bin\Debug\net8.0\KnowledgeCheck2.runtimeconfig.json
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\bin\Debug\net8.0\KnowledgeCheck2.dll
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\bin\Debug\net8.0\KnowledgeCheck2.pdb
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.AssemblyInfoInputs.cache
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.AssemblyInfo.cs
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.csproj.CoreCompileInputs.cache
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.sourcelink.json
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.dll
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\refint\KnowledgeCheck2.dll
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.pdb
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.genruntimeconfig.cache
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\ref\KnowledgeCheck2.dll
