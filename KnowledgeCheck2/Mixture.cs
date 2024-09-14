@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace KnowledgeCheck2
 {
+    public enum State
+    {
+        Unknown = 0,
+        Solid,
+        Liquid,
+        Gas,
+        Plasma
+    }
+
     public class Mixture
     {
         public string Name { get; set; } = string.Empty;
