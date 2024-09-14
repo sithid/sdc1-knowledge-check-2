@@ -1,0 +1,3 @@
+rec1,wfx-223,text translation of wfx-223 manual,james
+rec2,ffx-112,transcript from todays meeting,jimmy
+vid3,vdx-2,video of how to isntall the vdx,charles

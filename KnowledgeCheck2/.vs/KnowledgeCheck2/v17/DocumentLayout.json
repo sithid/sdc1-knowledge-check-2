@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\mixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:mixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\recordlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:recordlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\compound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:compound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\samplerecordlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:samplerecordlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:record.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|c:\\users\\demon\\onedrive\\documents\\github\\sdc1-knowledge-check-2\\knowledgecheck2\\irecordable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CDF43D-0794-46B9-8F67-4CF563268200}|KnowledgeCheck2.csproj|solutionrelative:irecordable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Compound.cs",
-              "DocumentMoniker": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Compound.cs",
-              "RelativeDocumentMoniker": "Compound.cs",
-              "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Compound.cs",
-              "RelativeToolTip": "Compound.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IRecordable.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\IRecordable.cs",
+              "RelativeDocumentMoniker": "IRecordable.cs",
+              "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\IRecordable.cs",
+              "RelativeToolTip": "IRecordable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T03:10:47.207Z",
+              "WhenOpened": "2024-09-14T20:14:00.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mixture.cs",
-              "DocumentMoniker": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Mixture.cs",
-              "RelativeDocumentMoniker": "Mixture.cs",
-              "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Mixture.cs",
-              "RelativeToolTip": "Mixture.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Record.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Record.cs",
+              "RelativeDocumentMoniker": "Record.cs",
+              "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Record.cs",
+              "RelativeToolTip": "Record.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAASwBkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T03:00:19.277Z",
+              "WhenOpened": "2024-09-14T10:11:44.297Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +66,36 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T00:54:10.924Z"
+              "WhenOpened": "2024-09-14T09:54:37.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SampleRecordLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\SampleRecordLibrary.cs",
+              "RelativeDocumentMoniker": "SampleRecordLibrary.cs",
+              "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\SampleRecordLibrary.cs",
+              "RelativeToolTip": "SampleRecordLibrary.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAASwB8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T09:53:46.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecordLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\RecordLibrary.cs",
+              "RelativeDocumentMoniker": "RecordLibrary.cs",
+              "ToolTip": "C:\\Users\\demon\\OneDrive\\Documents\\GitHub\\sdc1-knowledge-check-2\\KnowledgeCheck2\\RecordLibrary.cs",
+              "RelativeToolTip": "RecordLibrary.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T09:52:55.219Z",
+              "EditorCaption": ""
             }
           ]
         }

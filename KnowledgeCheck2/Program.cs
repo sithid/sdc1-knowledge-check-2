@@ -1,87 +1,84 @@
 ﻿namespace KnowledgeCheck2
 {
-    // TODO: Exception Handling
+    // I was bored and wanted to use this as a way to play around with generics.
+    // TODO: Currently using mostly strings, if this were for more than knowledge check 2 overkill I would use ints in appropriate places
+    // and parse with exception handling aswell as proper database stuff for the records.  
+    
 
     public class Program
     {
+        public static SampleRecordLibrary<Record> recordLibrary;
+
         static void Main(string[] args)
         {
-            Console.Write("How many sample records do you want to add? ");
+            string userInput = string.Empty;
 
-            int numberOfRecords = 0;
-            if (!int.TryParse(Console.ReadLine(), out numberOfRecords))
-                return;
+            recordLibrary = new SampleRecordLibrary<Record>();
 
-            List<Compound> samples = new List<Compound>();
+            Console.WriteLine($"There are currently {recordLibrary.TotalRecords} generic records stored.");
 
-            for (int i = 0; i < numberOfRecords; i++)
-                samples.Add(InitializeSample());
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("  1. Add records.");
+            Console.WriteLine("  2. Remove a record.");
+            Console.WriteLine("  3. View records.");
+            Console.WriteLine("  4. Exit.");
 
-            Console.WriteLine($"There are {samples.Count} samples");
-            Console.WriteLine();
+            userInput = Console.ReadLine();
 
-            for( int i = 0; i < samples.Count; ++i)
-                ShowSampleRecord(i, samples[i]);
+            while (!string.Equals(userInput, "4"))
+            {
+                switch (userInput)
+                {
+                    case "1":
+                        {
+                            Console.Write("How many records do you want to add? ");
 
-            Console.ReadKey();
-        }
+                            int numberOfRecords = 0;
 
-        static void ShowSampleRecord(int recordNumber, Compound sample)
-        {
-            Console.WriteLine($"Sample #: {recordNumber+1}");
-            Console.WriteLine($"{sample.Name} ({sample.ChemicalFormula})");
-            Console.WriteLine($"{sample.Description}");
-            Console.Write($"{sample.Weight}, {sample.State}, ");
+                            if (!int.TryParse(Console.ReadLine(), out numberOfRecords))
+                                return;
 
-            if (sample.IsHazardous)
-                Console.WriteLine("Hazardous");
-            else
-                Console.WriteLine("Non-Hazardous");
+                            for (int i = 0; i < numberOfRecords; i++)
+                            {
+                                Record r = recordLibrary.InitializeRecord();
 
-            Console.WriteLine();
-        }
+                                recordLibrary.AddRecord(r);
+                            }
 
-        static Compound InitializeSample()
-        {
-            Compound sample = new Compound();
+                            Console.WriteLine($"There are {recordLibrary.TotalRecords} records.");
+                            Console.WriteLine();
 
-            Console.Write("Name: ");
-            sample.Name = Console.ReadLine();
+                            recordLibrary.SaveRecords();
+                            break;
+                        }
+                    case "2":
+                        {
+                            Console.Write("What is the unique id of the record? ");
+                            string key = Console.ReadLine();
 
-            Console.Write("Description: ");
-            sample.Description = Console.ReadLine();
+                            if (recordLibrary.RemoveRecord(key))
+                                Console.WriteLine("Record removed.");
+                            else
+                                Console.WriteLine("That record does not exist.");
 
-            Console.Write("Weight(decimal): ");
-            sample.Weight = decimal.Parse(Console.ReadLine());
+                            break;
+                        }
+                    case "3":
+                        {
+                            Console.Clear();
+                            recordLibrary.DisplayAllRecords();
+                            break;
+                        }
+                }
 
-            Console.Write("State(solid/liquid/gas): ");
+                Console.WriteLine("What would you like to do?");
+                Console.WriteLine("  1. Add records.");
+                Console.WriteLine("  2. Remove a record.");
+                Console.WriteLine("  3. View records.");
+                Console.WriteLine("  4. Exit.");
 
-            string input = Console.ReadLine().ToLower();
-
-            if (string.Equals(input, "solid"))
-                sample.State = State.Solid;
-            else if (string.Equals(input, "liquid"))
-                sample.State = State.Liquid;
-            else if (string.Equals(input, "gas"))
-                sample.State = State.Gas;
-            else if (string.Equals(input, "plasma"))
-                sample.State = State.Plasma;
-            else
-                sample.State = State.Unknown;
-
-            Console.Write("Hazardous(y/n): ");
-
-            if (string.Equals(Console.ReadLine(), "y"))
-                sample.IsHazardous = true;
-            else
-                sample.IsHazardous = false;
-            
-            Console.Write("What is the chemical formula for this compound: ");
-            sample.ChemicalFormula = Console.ReadLine();
-
-            Console.WriteLine();
-
-            return sample;
+                userInput = Console.ReadLine();
+            }
         }
     }
 }
