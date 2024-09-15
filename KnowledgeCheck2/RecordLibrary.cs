@@ -10,7 +10,7 @@ using System.Xml;
 namespace KnowledgeCheck2
 {
     public abstract class RecordLibrary<T>
-        where T: IRecordable
+        where T: IRecord
     {
         public Dictionary<string, T> Records { get; set; }
 
@@ -34,7 +34,7 @@ namespace KnowledgeCheck2
 
         public virtual void AddRecord(T record)
         {
-            Records.Add(record.Id, record);
+            Records.Add(record.UniqueId, record);
         }
 
         public virtual bool RemoveRecord(string key)
@@ -49,11 +49,17 @@ namespace KnowledgeCheck2
         }
 
         public virtual void DisplayRecord( string uniqueId) {
-            T record = Records[uniqueId];
+            if (Records.ContainsKey(uniqueId))
+            {
+                T record = Records[uniqueId];
 
-            Console.WriteLine($"Record Id: {record.Id}");
-            Console.WriteLine($"Record Name: {record.Name}");
-            Console.WriteLine($"Record Description: {record.Description}");
+                Console.WriteLine($"Record Id: {record.UniqueId}");
+                Console.WriteLine($"Record Name: {record.Name}");
+                Console.WriteLine($"Record Description: {record.Description}");
+                Console.WriteLine($"Record Added By: {record.AddedBy}");
+            }
+            else
+                Console.WriteLine("That record does not exist.");
         }
 
         public virtual void DisplayAllRecords() {
@@ -77,7 +83,7 @@ namespace KnowledgeCheck2
 
                     record.Load(reader);
 
-                    Records.Add(record.Id, record);
+                    Records.Add(record.UniqueId, record);
                 }
 
                 reader.Close();
@@ -105,10 +111,13 @@ namespace KnowledgeCheck2
             record.Name = Console.ReadLine();
 
             Console.Write("What is this records unique identifier: ");
-            record.Id = Console.ReadLine();
+            record.UniqueId = Console.ReadLine();
 
             Console.Write("Description: ");
             record.Description = Console.ReadLine();
+
+            Console.Write("Record Added By: ");
+            record.AddedBy = Console.ReadLine();
 
             return record;
         }

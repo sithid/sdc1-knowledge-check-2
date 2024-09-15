@@ -7,30 +7,33 @@
 
     public class Program
     {
-        public static SampleRecordLibrary<Record> recordLibrary;
+        public static TextRecordLibrary<TextRecord> recordLibrary;
 
         static void Main(string[] args)
         {
             string userInput = string.Empty;
 
-            recordLibrary = new SampleRecordLibrary<Record>();
+            recordLibrary = new TextRecordLibrary<TextRecord>();
 
-            Console.WriteLine($"There are currently {recordLibrary.TotalRecords} generic records stored.");
-
+            Console.WriteLine($"There are currently {recordLibrary.TotalRecords} records stored.");
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("  1. Add records.");
-            Console.WriteLine("  2. Remove a record.");
-            Console.WriteLine("  3. View records.");
-            Console.WriteLine("  4. Exit.");
+            Console.WriteLine("  2. Remove Single record.");
+            Console.WriteLine("  3. View Single record.");
+            Console.WriteLine("  4. View All Records.");
+            Console.WriteLine("  5. View All Content.");
+            Console.WriteLine("  6. Exit.");
 
             userInput = Console.ReadLine();
 
-            while (!string.Equals(userInput, "4"))
+            while (!string.Equals(userInput, "6"))
             {
                 switch (userInput)
                 {
                     case "1":
                         {
+                            Console.Clear();
+
                             Console.Write("How many records do you want to add? ");
 
                             int numberOfRecords = 0;
@@ -40,7 +43,7 @@
 
                             for (int i = 0; i < numberOfRecords; i++)
                             {
-                                Record r = recordLibrary.InitializeRecord();
+                                TextRecord r = recordLibrary.InitializeRecord();
 
                                 recordLibrary.AddRecord(r);
                             }
@@ -57,7 +60,10 @@
                             string key = Console.ReadLine();
 
                             if (recordLibrary.RemoveRecord(key))
+                            {
+                                recordLibrary.SaveRecords();
                                 Console.WriteLine("Record removed.");
+                            }
                             else
                                 Console.WriteLine("That record does not exist.");
 
@@ -65,17 +71,34 @@
                         }
                     case "3":
                         {
+                            Console.Write("Enter the unique id of the record: ");
+                            string id = Console.ReadLine();
+
+                            recordLibrary.DisplayRecord(id);
+                            break;
+                        }
+                    case "4":
+                        {
                             Console.Clear();
                             recordLibrary.DisplayAllRecords();
                             break;
                         }
+                    case "5":
+                        {
+                            Console.Clear();
+                            recordLibrary.DisplayAllContent();
+                            break;
+                        }
                 }
 
+                Console.WriteLine($"There are currently {recordLibrary.TotalRecords} records stored.");
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine("  1. Add records.");
-                Console.WriteLine("  2. Remove a record.");
-                Console.WriteLine("  3. View records.");
-                Console.WriteLine("  4. Exit.");
+                Console.WriteLine("  2. Remove Single record.");
+                Console.WriteLine("  3. View Single record.");
+                Console.WriteLine("  4. View All Records.");
+                Console.WriteLine("  5. View All Content.");
+                Console.WriteLine("  6. Exit.");
 
                 userInput = Console.ReadLine();
             }
