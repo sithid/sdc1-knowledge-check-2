@@ -48,7 +48,7 @@ namespace KnowledgeCheck2
             return false;
         }
 
-        public virtual void DisplayRecord( string uniqueId) {
+        public virtual bool DisplayRecord( string uniqueId) {
             if (Records.ContainsKey(uniqueId))
             {
                 T record = Records[uniqueId];
@@ -57,9 +57,13 @@ namespace KnowledgeCheck2
                 Console.WriteLine($"Record Name: {record.Name}");
                 Console.WriteLine($"Record Description: {record.Description}");
                 Console.WriteLine($"Record Added By: {record.AddedBy}");
+                return true;
             }
             else
+            {
                 Console.WriteLine("That record does not exist.");
+                return false;
+            }
         }
 
         public virtual void DisplayAllRecords() {

@@ -27,14 +27,17 @@ namespace KnowledgeCheck2
             return (T)record;
         }
 
-        public override void DisplayRecord(string uniqueId)
+        public override bool DisplayRecord(string uniqueId)
         {
-            base.DisplayRecord(uniqueId);
+            bool exists = base.DisplayRecord(uniqueId);
 
-            if (Records.ContainsKey(uniqueId))
+            if (exists)
+            {
                 Console.WriteLine($"Record Content: {Records[uniqueId].Content}");
-            else
-                Console.WriteLine("That record does not exist.");
+                return true;
+            }
+
+            return false;
         }
 
         public void DisplayAllContent()

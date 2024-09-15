@@ -89,6 +89,11 @@
                             recordLibrary.DisplayAllContent();
                             break;
                         }
+                    default:
+                        {
+                            Console.WriteLine("Select an option from the list.");
+                            break;
+                        }
                 }
 
                 Console.WriteLine($"There are currently {recordLibrary.TotalRecords} records stored.");
