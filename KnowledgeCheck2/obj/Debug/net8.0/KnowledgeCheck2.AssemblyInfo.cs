@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KnowledgeCheck2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4316a73b2609bb759158c4453f799e4afa9bb5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8d1a2637ab937ccd181a59c0ff6325de4a82b06")]
 [assembly: System.Reflection.AssemblyProductAttribute("KnowledgeCheck2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KnowledgeCheck2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

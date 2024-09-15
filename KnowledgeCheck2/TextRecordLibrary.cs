@@ -14,7 +14,7 @@ namespace KnowledgeCheck2
         }
 
         public override void Initialize() {
-            FileName = "sample_records.txt";
+            FileName = "text_records.txt";
             base.Initialize();
         }
 

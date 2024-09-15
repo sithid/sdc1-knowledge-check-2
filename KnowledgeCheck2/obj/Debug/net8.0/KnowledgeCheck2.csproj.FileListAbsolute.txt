@@ -13,3 +13,4 @@ C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\
 C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.pdb
 C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\KnowledgeCheck2.genruntimeconfig.cache
 C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\obj\Debug\net8.0\ref\KnowledgeCheck2.dll
+C:\Users\demon\OneDrive\Documents\GitHub\sdc1-knowledge-check-2\KnowledgeCheck2\bin\Debug\net8.0\text_records.txt
